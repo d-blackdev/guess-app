@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Form from './GameComponent/Form';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component {
+  // state = {
+  //   guess:null,
+  //   diffs:null,
+  //   numRange:100,
+  //   rndNum:rndNum()
+  // }
+  // updateState = (inputGuess) =>{
+  //  console.log(inputGuess + "APPG");
+  //  console.log(this.state.rndNum + 'APP')
+  
+  //   const abs = Math.abs(this.state.rndNum - inputGuess)
+  //   this.setState({
+  //     guess:inputGuess,
+      
+  //   })
+  // console.log("diff APP " + this.state.diff)
+  // console.log("diffclassabs " + abs)
+
+    
+  // }
+  render(){
+    return (
+      <div className="App">
+        
+  
+      
+        <Form/>
+      </div>
+    );
+  }
+  
 }
 
 export default App;
